@@ -30,11 +30,13 @@ body {
 }
 
 .wrapper {
+    width: 40rem;
+    max-width: 90%;
     display: flex;
     justify-content: space-between;
     align-self: flex-end;
     margin-right: 5rem;
-    width: 40rem;
+    margin-top: 3rem;
     z-index: 100;
 }
 
@@ -186,4 +188,46 @@ body {
     right: -13%;
     background: rgb(132, 161, 255);
     z-index: -1;
+}
+
+@media only screen and (max-width: 56.25em) {
+    .title {
+        font-size: 3rem;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        align-self: center;
+        margin-right: 0;
+    }
+
+    .col-1 {
+        justify-content: center;
+        flex-direction: row;
+        margin-bottom: 2rem;
+    }
+
+    .col-1 *+* {
+        margin-top: 0;
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width: 30em) {
+    .col-1 {
+        display: none;
+    }
+
+    .btn-prev {
+        left: 0;
+    }
+
+    .btn-next {
+        right: 0;
+    }
+
+    .btn-prev,
+    .btn-next {
+        color: rgb(0, 0, 0);
+    }
 }
