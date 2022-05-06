@@ -200,6 +200,7 @@ body {
         flex-direction: column;
         align-self: center;
         margin-right: 0;
+        margin-top: 0;
     }
 
     .col-1 {
@@ -215,8 +216,12 @@ body {
 }
 
 @media only screen and (max-width: 30em) {
-    .col-1 {
-        display: none;
+    .item.active {
+        transform: scale(1);
+    }
+
+    .col-1 *+* {
+        margin-left: .7rem;
     }
 
     .btn-prev {
@@ -225,10 +230,5 @@ body {
 
     .btn-next {
         right: 0;
-    }
-
-    .btn-prev,
-    .btn-next {
-        color: rgb(0, 0, 0);
     }
 }
