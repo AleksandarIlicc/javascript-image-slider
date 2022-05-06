@@ -231,4 +231,19 @@ body {
     .btn-next {
         right: 0;
     }
+
+    .square {
+        width: 15rem;
+        height: 20rem;
+    }
+
+    .circle--1 {
+        width: 15rem;
+        height: 15rem;
+    }
+    
+    .circle--2 {
+        width: 18rem;
+        height: 18rem;
+    }
 }
