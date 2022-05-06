@@ -20,6 +20,7 @@ body {
     height: 100vh;
     background: linear-gradient(120deg, rgb(70, 160, 240), #1f4fbf);
     isolation: isolate;
+    overflow: hidden;
 }
 
 .sec-container {
